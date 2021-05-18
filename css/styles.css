@@ -1,3 +1,31 @@
 body {
-    color: blue;
+    background-color: grey;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
 }
+
+#study {grid-area: "study"}
+#clock {grid-area: "clock"}
+#library {grid-area: "library"}
+#lounge {grid-area: "lounge"}
+#mail {grid-area: "mail"}
+#storage {grid-area: "storage"}
+
+.grid-container {
+    display: grid;
+    background-color: lightslategray;
+    height: 95vh;
+    width: 95vw;
+    margin: 0 auto;
+    box-shadow: 0 0 20px 10px rgb(55, 55, 55);
+
+    grid-template-areas: 
+        "study clock library"
+        "lounge mail storage";
+}
+
+.grid-item {
+    border-style: solid;
+}
+
