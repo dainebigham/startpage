@@ -29,3 +29,15 @@ body {
     border-style: solid;
 }
 
+#time { 
+    grid-area: "time";
+}
+#weather { 
+    grid-area: "weather"
+}
+
+#clock {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+}
